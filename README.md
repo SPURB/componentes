@@ -14,6 +14,10 @@ npm run dev
 # cria site de documentação de componentes
 npm run build
 
-# para atualizar pacotes
-lerna publish
+# para atualizar pacotes, usuário deve pertencer à organização @spurb
+# logar no npm
+npm login
+
+# publicar
+npx lerna publish --skip-git
 ```
