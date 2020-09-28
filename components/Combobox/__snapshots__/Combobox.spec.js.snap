@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Combobox.vue Renderiza corretamente passando props 1`] = `
+<div
+  class="select-options"
+>
+  <button
+    class="select-options__toggler default"
+    data-cy="btn__options"
+  >
+    <div>
+      Selecione um projeto
+    </div>
+     
+    <i
+      class="icon icon-expandir"
+    />
+  </button>
+   
+  <transition-stub
+    name="fade"
+  >
+    <ul
+      class="select-options__select"
+      style="display: none;"
+    >
+      <li
+        class="select-options__options"
+        value="0"
+      >
+        <button
+          data-cy="select__option"
+        >
+          
+          Selecione um projeto
+        
+        </button>
+      </li>
+      <li
+        class="select-options__options"
+        value="1"
+      >
+        <button
+          data-cy="select__option"
+        >
+          
+          PIU Bairros do Tamandatueí
+        
+        </button>
+      </li>
+    </ul>
+  </transition-stub>
+</div>
+`;

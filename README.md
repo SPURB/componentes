@@ -1,5 +1,5 @@
 # SPURB Componentes
-Repositório dos componentes utilizados nos sistemas da São Paulo Urbanismo.
+Repositório dos componentes utilizados nos sistemas da São Paulo Urbanismo
 
 ## pré-requisitos para desenvolvimento
  - node^12
@@ -9,5 +9,11 @@ Repositório dos componentes utilizados nos sistemas da São Paulo Urbanismo.
 npm i
 
 # abrir ambiente de desenvolvimento
-npm run storybook
+npm run dev
+
+# cria site de documentação de componentes
+npm run build
+
+# para atualizar pacotes
+lerna publish
 ```
