@@ -1,5 +1,5 @@
-import { shallowMount } from "@vue/test-utils"
-import Combobox from "./Combobox.vue"
+import { shallowMount } from '@vue/test-utils'
+import Combobox from './Combobox.vue'
 
 const options = [
   {
@@ -14,7 +14,6 @@ const options = [
 
 describe('Combobox.vue', () => {
   it('Renderiza corretamente passando props', () => {
-
     const wrapper = shallowMount(Combobox, {
       propsData: { options }
     })

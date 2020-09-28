@@ -4,8 +4,7 @@ import Logo from './Logo'
 storiesOf('Logo', module)
   .add('mono-black', () => ({
     components: { Logo },
-    template:
-    `
+    template: `
       <logo
         fillType="black"
         fillBrand="black"
@@ -15,8 +14,7 @@ storiesOf('Logo', module)
   }))
   .add('color', () => ({
     components: { Logo },
-    template:
-    `
+    template: `
       <logo
         fillType="black" 
         fillBrand="#038375"
@@ -24,4 +22,3 @@ storiesOf('Logo', module)
       />
     `
   }))
-  

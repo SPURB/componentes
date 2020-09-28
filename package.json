@@ -3,6 +3,8 @@
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@storybook/addon-actions": "^6.0.22",
     "@storybook/addon-essentials": "^6.0.22",
     "@storybook/addon-links": "^6.0.22",
@@ -12,8 +14,11 @@
     "@vue/cli-service": "^4.5.6",
     "@vue/test-utils": "^1.1.0",
     "babel-loader": "^8.1.0",
+    "husky": "^4.3.0",
     "jest-serializer-vue": "^2.0.2",
     "lerna": "^3.22.1",
+    "lint-staged": "^10.4.0",
+    "prettier-standard": "^16.4.1",
     "react-is": "^16.13.1",
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.12"
@@ -26,6 +31,7 @@
   "scripts": {
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
-    "test": "vue-cli-service test:unit"
+    "test": "vue-cli-service test:unit",
+    "lint": "prettier-standard components/{*,/**/*}.js src/{*,/**/*}.js"
   }
 }
