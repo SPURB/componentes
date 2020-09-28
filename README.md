@@ -1,5 +1,5 @@
-# SPURB Componentes
-Repositório dos componentes utilizados nos sistemas da São Paulo Urbanismo
+# Componenentes [![Build Status](https://travis-ci.org/SPURB/componentes.svg?branch=master)](https://travis-ci.org/SPURB/componentes)
+Repositório de componentes frontend utilizados nos sistemas da São Paulo Urbanismo
 
 ## pré-requisitos para desenvolvimento
  - node^12

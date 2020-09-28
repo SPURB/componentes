@@ -15,6 +15,9 @@ branches:
 install:
  - npm ci
 
+before_script:
+ - npm test
+
 script:
  - npm run build
 
