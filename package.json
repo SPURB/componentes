@@ -42,6 +42,7 @@
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
     "prepare": "lerna run build",
+    "publish": "lerna run publish",
     "test": "vue-cli-service test:unit",
     "lint": "prettier-standard components/{*,/**/*}.js src/{*,/**/*}.js"
   }

@@ -151,7 +151,7 @@ module.exports = /******/ (function (modules) {
       // Indicate to webpack that this file can be concatenated
       /* harmony default export */ var setPublicPath = null
 
-      // CONCATENATED MODULE: C:/wamp64/www/componentes/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0ae8e219-vue-loader-template"}!C:/wamp64/www/componentes/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!C:/wamp64/www/componentes/node_modules/cache-loader/dist/cjs.js??ref--0-0!C:/wamp64/www/componentes/node_modules/vue-loader/lib??vue-loader-options!./Logo.vue?vue&type=template&id=7cbdaffd&
+      // CONCATENATED MODULE: C:/wamp64/www/componentes/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"1fded987-vue-loader-template"}!C:/wamp64/www/componentes/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!C:/wamp64/www/componentes/node_modules/cache-loader/dist/cjs.js??ref--0-0!C:/wamp64/www/componentes/node_modules/vue-loader/lib??vue-loader-options!./Logo.vue?vue&type=template&id=7cbdaffd&
       var render = function () {
         var _vm = this
         var _h = _vm.$createElement
