@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import Logo from './Logo.vue'
+import Logo from '../Logo.vue'
 
 describe('Logo.vue', () => {
   it('Renderiza corretamente passando props', () => {

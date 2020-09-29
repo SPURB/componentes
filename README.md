@@ -15,9 +15,12 @@ npm run dev
 npm run build
 
 # para atualizar pacotes, usuário deve pertencer à organização @spurb
+
+# preparar compila componentes
+npm run prepare
+
 # logar no npm
 npm login
 
-# publicar
 npx lerna publish --skip-git
 ```

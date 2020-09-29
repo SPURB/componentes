@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import Combobox from './Combobox.vue'
+import Combobox from '../Combobox.vue'
 
 const options = [
   {
