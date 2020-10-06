@@ -11,16 +11,12 @@ npm i
 # abrir ambiente de desenvolvimento
 npm run dev
 
-# cria site de documentação de componentes
+# testes
+npm run test
+
+# compila componentes para lib
 npm run build
 
-# para atualizar pacotes, usuário deve pertencer à organização @spurb
-# logar no npm
-npm login
-
-# preparar compila componentes
-npm run prepare
-
-# publicar
-npm run publish
+# inicia storybook
+npm run storybook
 ```

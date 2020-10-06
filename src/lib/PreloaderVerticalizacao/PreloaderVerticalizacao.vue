@@ -18,8 +18,7 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
-
+<style scoped>
 .preloader-verticalizacao__plane-1 {
   animation: translate-plane-1 3500ms infinite;
 }

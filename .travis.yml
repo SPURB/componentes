@@ -15,19 +15,15 @@ branches:
 install:
  - npm ci
 
-before_script:
- - npm test
-
-script:
- - npm run build
+test:
+ - npm run test
 
 deploy:
-  provider: pages
-  local_dir: storybook-static
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  tag: next
+  provider: npm
+  email: "desenvolvimento@spurbanismo.sp.gov.br"
+  api_key: "NPM_AUTH_TOKEN"
   on:
-    branch: master
-
-notifications:
-  webhooks: https://www.travisbuddy.com
+    tags: true
+    repo: SPURB/componentes
+  skip_cleanup: 'true'

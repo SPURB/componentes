@@ -6,7 +6,6 @@ exports[`Combobox.vue Renderiza corretamente passando props 1`] = `
 >
   <button
     class="select-options__toggler default"
-    data-cy="btn__options"
   >
     <div>
       Selecione um projeto
@@ -28,9 +27,7 @@ exports[`Combobox.vue Renderiza corretamente passando props 1`] = `
         class="select-options__options"
         value="0"
       >
-        <button
-          data-cy="select__option"
-        >
+        <button>
           
           Selecione um projeto
         
@@ -40,9 +37,7 @@ exports[`Combobox.vue Renderiza corretamente passando props 1`] = `
         class="select-options__options"
         value="1"
       >
-        <button
-          data-cy="select__option"
-        >
+        <button>
           
           PIU Bairros do Tamandatueí
         

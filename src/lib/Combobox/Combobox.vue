@@ -4,7 +4,6 @@
       class="select-options__toggler"
       :class="[typeBackground, typeDisabled]"
       @click.prevent="open = !open"
-      data-cy="btn__options"
       :disabled="disabled"
     >
       <div>{{ selected }}</div>
@@ -20,7 +19,6 @@
         >
           <button
             @click.prevent="setSelectedValue(option)"
-            data-cy="select__option"
           >
             {{ option.title }}
           </button>
@@ -81,75 +79,69 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
-@import "../assets/variables.scss";
-
-.select-options {
-  &__select {
-    list-style-type: none;
-    margin: 0 0 2rem 0;
-    padding: 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
-    li:first-child {
-      display: none;
-    }
-  }
-  button {
-    height: 48px;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    border: 0;
-    font-family: $grot;
-    font-size: 1rem;
-    padding-left: 1.75rem;
-    transition: background-color ease-in-out 0.35s;
-    &.default {
-      background-color: rgba(255, 255, 255, 0.05);
-      color: #fff;
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.15);
-      }
-    }
-    &.disabled {
-      cursor: not-allowed;
-      background-color: #ccc;
-      &:hover {
-        background-color: #ccc;
-      }
-    }
-    &.forms {
-      background-color: rgba(0, 0, 0, 0.08);
-      color: #000;
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-  &__toggler {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    .icon {
-      font-size: 40px;
-      transition: transform ease-in-out 0.15s;
-      &.open {
-        transform: rotate(180deg);
-      }
-    }
-  }
+<style scoped>
+.select-options__select {
+  list-style-type: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
 }
-.fade-enter-active,
-.fade-leave-active {
+.select-options__select li:first-child {
+  display: none;
+}
+.select-options button {
+  height: 48px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  border: 0;
+  font-family: 'Roboto', 'Segoe UI', 'Helvetica', Arial, sans-serif;
+  font-size: 1rem;
+  padding-left: 1.75rem;
+  transition: background-color ease-in-out 0.35s;
+}
+.select-options button.default {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+.select-options button.default:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.select-options button.disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+.select-options button.disabled:hover {
+  background-color: #ccc;
+}
+.select-options button.forms {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #000;
+}
+.select-options button.forms:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.select-options button:focus {
+  outline: none;
+}
+.select-options__toggler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.select-options__toggler .icon {
+  font-size: 40px;
+  transition: transform ease-in-out 0.15s;
+}
+.select-options__toggler .icon.open {
+  transform: rotate(180deg);
+}
+.fade-enter-active, .fade-leave-active {
   transition: opacity 0.25s;
 }
-.fade-enter,
-.fade-leave-to {
+.fade-enter, .fade-leave-to {
   opacity: 0;
 }
 </style>
