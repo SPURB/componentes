@@ -19,7 +19,8 @@
     "dev": "vue-cli-service serve dev/serve.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "test": "vue-cli-service test:unit",
-    "lint": "prettier-standard components/{*,/**/*}.js src/{*,/**/*}.js"
+    "lint": "prettier-standard components/{*,/**/*}.js src/{*,/**/*}.js",
+    "release": "release-it"
   },
   "dependencies": {},
   "devDependencies": {
@@ -37,8 +38,10 @@
     "@vue/cli-service": "^4.3.1",
     "@vue/test-utils": "^1.1.0",
     "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
     "minimist": "^1.2.5",
     "prettier-standard": "^16.4.1",
+    "release-it": "^14.0.3",
     "rollup": "^2.7.3",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-bundle-scss": "^0.1.1",

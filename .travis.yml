@@ -18,12 +18,16 @@ install:
 test:
  - npm run test
 
+script:
+ - npm run docs
+
 deploy:
-  tag: next
-  provider: npm
-  email: "desenvolvimento@spurbanismo.sp.gov.br"
-  api_key: "NPM_AUTH_TOKEN"
+  provider: pages
+  local_dir: docs
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
   on:
-    tags: true
-    repo: SPURB/componentes
-  skip_cleanup: 'true'
+    branch: master
+
+notifications:
+  webhooks: https://www.travisbuddy.com
