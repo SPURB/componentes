@@ -1,8 +1,34 @@
 # Componenentes [![Build Status](https://travis-ci.org/SPURB/componentes.svg?branch=master)](https://travis-ci.org/SPURB/componentes)
-Repositório de componentes frontend utilizados nos sistemas da São Paulo Urbanismo
+Repositório de componentes vue utilizados nas aplicações da São Paulo Urbanismo
 
-## pré-requisitos para desenvolvimento
- - node^12
+instale
+```bash
+npm i @spurb/componentes -D
+```
+
+declare
+```js
+import { Logo } from '@spurb/componentes'
+export default {
+  components: { Logo } // Combobox, PreloaderVerticalizacao
+}
+```
+e use no template
+```html
+<template>
+  <logo
+    fillType="black" 
+    fillBrand="#038375"
+    :opacity="1"
+  />
+</template>
+```
+
+Veja os componentes disponibilizados e os exemplos de uso aqui:
+https://spurb.github.io/componentes/
+
+
+## Desenvolvimento
 
 ```sh
 # instalar dependencias
