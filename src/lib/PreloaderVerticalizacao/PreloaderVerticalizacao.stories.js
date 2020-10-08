@@ -5,6 +5,6 @@ storiesOf('PreloaderVerticalizacao', module).add(
   'PreloaderVerticalizacao',
   () => ({
     components: { PreloaderVerticalizacao },
-    template: `<PreloaderVerticalizacao :stroke="'grey'" />`
+    template: `<PreloaderVerticalizacao stroke="grey" />`
   })
 )

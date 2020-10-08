@@ -2,7 +2,10 @@
   <div id="dev">
     <Logo fillType="black" fillBrand="black" />
     <PreloaderVerticalizacao :stroke="'grey'" />
-    <Combobox :type="true" :options="[
+    <Combobox
+      :disabled="false"
+      :type="true"
+      :options="[
       {
         title: 'Selecione um projeto',
         value: 'nenhum projeto'
