@@ -56,5 +56,14 @@
   },
   "engines": {
     "node": ">=10"
-  }
+  },
+  "homepage": "https://github.com/spurb/componentes#readme",
+  "keywords": [
+    "vue",
+    "components"
+  ],
+  "bugs": {
+    "url": "https://github.com/spurb/componentes/"
+  },
+  "license": "(GPL-3.0)"
 }
