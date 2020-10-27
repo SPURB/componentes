@@ -9,28 +9,31 @@
       height
     }"
   >
-    <span 
-      class="left"
-      @click.prevent="previousDisabled ? '' : previous()"
-    >
-      <svg width="20" height="30" viewBox="0 0 248 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M247.667 353L95.0001 200L247.667 47L200.667 0L0.666748 200L200.667 400L247.667 353Z"
-          :fill="previousDisabled ? '#ccc' : '#fff'"
-        />
-      </svg>
-    </span>
-    <span
-      class="right"
-      @click.prevent="nextDisabled ? '' : next()"
-    >
-      <svg width="20" height="30" viewBox="0 0 247 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M1.56015e-05 47L152.667 200L-1.11499e-05 353L47 400L247 200L47 -1.74846e-05L1.56015e-05 47Z"
-          :fill="nextDisabled ? '#ccc' : '#fff'"
-        />
-      </svg>
-    </span>
+    <slot name="header" />
+    <section class="controles">
+      <span 
+        class="left"
+        @click.prevent="previousDisabled ? '' : previous()"
+      >
+        <svg width="20" height="30" viewBox="0 0 248 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M247.667 353L95.0001 200L247.667 47L200.667 0L0.666748 200L200.667 400L247.667 353Z"
+            :fill="previousDisabled ? '#ccc' : '#fff'"
+          />
+        </svg>
+      </span>
+      <span
+        class="right"
+        @click.prevent="nextDisabled ? '' : next()"
+      >
+        <svg width="20" height="30" viewBox="0 0 247 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.56015e-05 47L152.667 200L-1.11499e-05 353L47 400L247 200L47 -1.74846e-05L1.56015e-05 47Z"
+            :fill="nextDisabled ? '#ccc' : '#fff'"
+          />
+        </svg>
+      </span>
+    </section>
   </div>
 </template>
 
@@ -85,17 +88,27 @@ export default {
 <style scoped>
 .galeria {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 0 10px;
+}
+
+.galeria .controles {
+  height: 100%;
+  display: flex;
   align-items: center;
 }
 
-.galeria span {
+.galeria .controles span {
   cursor: pointer;
   transition: transform .15s ease-in-out;
+  position: absolute;
 }
 
-.galeria span.right:hover {
+.galeria .controles span.right {  
+  right: 26px;
+}
+
+.galeria .controles span.right:hover {
   -moz-transform: translate(3px, 0px);
   -webkit-transform: translate(3px, 0px);
   -o-transform: translate(3px, 0px);
@@ -103,7 +116,7 @@ export default {
   transform: translate(3px, 0px);
 }
 
-.galeria span.left:hover {
+.galeria .controles span.left:hover {
   -moz-transform: translate(-3px, 0px);
   -webkit-transform: translate(-3px, 0px);
   -o-transform: translate(-3px, 0px);
