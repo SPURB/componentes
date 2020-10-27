@@ -34,8 +34,8 @@ storiesOf('Galeria', module)
     data () {
       return {
         imagens: [
-          'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_16.jpg', 
-          'https://i.pinimg.com/originals/e1/b4/27/e1b42700f54e4db75f212c37c5589c7e.jpg'
+          'https://www.dalcomad.com.br/wp-content/uploads/2018/11/capa.jpg', 
+          'https://www.estudarfora.org.br/app/uploads/2019/04/urbanismo.jpg'
         ]
       }
     }
