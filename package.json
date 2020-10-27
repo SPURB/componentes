@@ -22,7 +22,9 @@
     "lint": "prettier-standard components/{*,/**/*}.js src/{*,/**/*}.js",
     "release": "release-it"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
@@ -37,6 +39,7 @@
     "@vue/cli-plugin-unit-jest": "^4.5.6",
     "@vue/cli-service": "^4.3.1",
     "@vue/test-utils": "^1.1.0",
+    "autoprefixer": "^9.0.0",
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "minimist": "^1.2.5",
