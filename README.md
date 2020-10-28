@@ -36,6 +36,8 @@ https://spurb.github.io/componentes/
  - [Logo](./src/lib/logo/README)
  - [Preloader de verticalização](./src/lib/PreloaderVerticalizacao/README)
  - [Combobox](./src/lib/Combobox/README)
+ - [Card](./src/lib/Card/README)
+ - [Galeria](./src/lib/Galeria/README)
 
 
 ## Desenvolvimento
