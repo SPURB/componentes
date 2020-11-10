@@ -604,11 +604,90 @@ const __vue_component__$2 = /*#__PURE__*/normalizeComponent({
   staticRenderFns: __vue_staticRenderFns__$2
 }, __vue_inject_styles__$2, __vue_script__$2, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, false, createInjector, undefined, undefined);
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$3 = {
+  name: 'Card',
+  props: {
+    headerClass: {
+      type: String,
+      default: 'px-6 py-4'
+    },
+    bodyClass: {
+      type: String,
+      default: 'px-6 py-4'
+    },
+    footerClass: {
+      type: String,
+      default: 'px-6 pt-4 pb-2'
+    }
+  }
+};
+
+/* script */
+const __vue_script__$3 = script$3;
+/* template */
+
+var __vue_render__$3 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('div', {
+    staticClass: "max-w-sm rounded overflow-hidden shadow-lg"
+  }, [_c('div', {
+    class: _vm.headerClass
+  }, [_vm._t("header")], 2), _vm._v(" "), _c('div', {
+    class: _vm.bodyClass
+  }, [_vm._t("body")], 2), _vm._v(" "), _c('div', {
+    class: _vm.footerClass
+  }, [_vm._t("footer")], 2)]);
+};
+
+var __vue_staticRenderFns__$3 = [];
+/* style */
+
+const __vue_inject_styles__$3 = undefined;
+/* scoped */
+
+const __vue_scope_id__$3 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$3 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$3 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$3 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$3,
+  staticRenderFns: __vue_staticRenderFns__$3
+}, __vue_inject_styles__$3, __vue_script__$3, __vue_scope_id__$3, __vue_is_functional_template__$3, __vue_module_identifier__$3, false, undefined, undefined, undefined);
+
 var components = /*#__PURE__*/Object.freeze({
   __proto__: null,
   Logo: __vue_component__,
   PreloaderVerticalizacao: __vue_component__$1,
-  Combobox: __vue_component__$2
+  Combobox: __vue_component__$2,
+  Card: __vue_component__$3
 });
 
 // Import vue components
@@ -627,4 +706,4 @@ const plugin = {
 }; // To auto-install on non-es builds, when vue is found
 
 export default plugin;
-export { __vue_component__$2 as Combobox, __vue_component__ as Logo, __vue_component__$1 as PreloaderVerticalizacao };
+export { __vue_component__$3 as Card, __vue_component__$2 as Combobox, __vue_component__ as Logo, __vue_component__$1 as PreloaderVerticalizacao };

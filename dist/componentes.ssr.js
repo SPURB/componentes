@@ -472,7 +472,75 @@ var __vue_is_functional_template__$2 = false;
 var __vue_component__$2 = /*#__PURE__*/normalizeComponent({
   render: __vue_render__$2,
   staticRenderFns: __vue_staticRenderFns__$2
-}, __vue_inject_styles__$2, __vue_script__$2, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, false, undefined, createInjectorSSR, undefined);var components=/*#__PURE__*/Object.freeze({__proto__:null,Logo: __vue_component__,PreloaderVerticalizacao: __vue_component__$1,Combobox: __vue_component__$2});var install = function installComponentes(Vue) {
+}, __vue_inject_styles__$2, __vue_script__$2, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, false, undefined, createInjectorSSR, undefined);//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$3 = {
+  name: 'Card',
+  props: {
+    headerClass: {
+      type: String,
+      default: 'px-6 py-4'
+    },
+    bodyClass: {
+      type: String,
+      default: 'px-6 py-4'
+    },
+    footerClass: {
+      type: String,
+      default: 'px-6 pt-4 pb-2'
+    }
+  }
+};/* script */
+var __vue_script__$3 = script$3;
+/* template */
+
+var __vue_render__$3 = function __vue_render__() {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('div', {
+    staticClass: "max-w-sm rounded overflow-hidden shadow-lg"
+  }, [_vm._ssrNode("<div" + _vm._ssrClass(null, _vm.headerClass) + ">", "</div>", [_vm._t("header")], 2), _vm._ssrNode(" "), _vm._ssrNode("<div" + _vm._ssrClass(null, _vm.bodyClass) + ">", "</div>", [_vm._t("body")], 2), _vm._ssrNode(" "), _vm._ssrNode("<div" + _vm._ssrClass(null, _vm.footerClass) + ">", "</div>", [_vm._t("footer")], 2)], 2);
+};
+
+var __vue_staticRenderFns__$3 = [];
+/* style */
+
+var __vue_inject_styles__$3 = undefined;
+/* scoped */
+
+var __vue_scope_id__$3 = undefined;
+/* module identifier */
+
+var __vue_module_identifier__$3 = "data-v-1d70480b";
+/* functional template */
+
+var __vue_is_functional_template__$3 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+var __vue_component__$3 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$3,
+  staticRenderFns: __vue_staticRenderFns__$3
+}, __vue_inject_styles__$3, __vue_script__$3, __vue_scope_id__$3, __vue_is_functional_template__$3, __vue_module_identifier__$3, false, undefined, undefined, undefined);var components=/*#__PURE__*/Object.freeze({__proto__:null,Logo: __vue_component__,PreloaderVerticalizacao: __vue_component__$1,Combobox: __vue_component__$2,Card: __vue_component__$3});var install = function installComponentes(Vue) {
   if (install.installed) return;
   install.installed = true;
   Object.entries(components).forEach(function (_ref) {
@@ -505,4 +573,4 @@ var plugin = {
     GlobalVue.use(plugin);
   }
 } // Default export is library as a whole, registered via Vue.use()
-exports.Combobox=__vue_component__$2;exports.Logo=__vue_component__;exports.PreloaderVerticalizacao=__vue_component__$1;exports.default=plugin;
+exports.Card=__vue_component__$3;exports.Combobox=__vue_component__$2;exports.Logo=__vue_component__;exports.PreloaderVerticalizacao=__vue_component__$1;exports.default=plugin;
