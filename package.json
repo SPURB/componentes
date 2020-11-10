@@ -1,6 +1,6 @@
 {
   "name": "@spurb/componentes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Componentes web da São Paulo Urbanismo",
   "publishConfig": {
     "access": "public"
