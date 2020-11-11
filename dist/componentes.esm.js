@@ -682,12 +682,202 @@ const __vue_component__$3 = /*#__PURE__*/normalizeComponent({
   staticRenderFns: __vue_staticRenderFns__$3
 }, __vue_inject_styles__$3, __vue_script__$3, __vue_scope_id__$3, __vue_is_functional_template__$3, __vue_module_identifier__$3, false, undefined, undefined, undefined);
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$4 = {
+  name: 'Galeria',
+  props: {
+    imagens: {
+      type: Array,
+      required: true
+    },
+    width: {
+      type: String,
+      required: true
+    },
+    height: {
+      type: String,
+      required: true
+    },
+    backgroundCover: {
+      type: Boolean,
+      required: true
+    }
+  },
+
+  data() {
+    return {
+      currentImage: 0
+    };
+  },
+
+  computed: {
+    lengthImagens() {
+      return this.imagens.length;
+    },
+
+    nextDisabled() {
+      return this.lengthImagens - 1 == this.currentImage ? true : false;
+    },
+
+    previousDisabled() {
+      return this.currentImage == 0 ? true : false;
+    }
+
+  },
+  methods: {
+    next() {
+      this.currentImage = this.currentImage + 1;
+    },
+
+    previous() {
+      this.currentImage = this.currentImage - 1;
+    }
+
+  }
+};
+
+/* script */
+const __vue_script__$4 = script$4;
+/* template */
+
+var __vue_render__$4 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('div', {
+    staticClass: "galeria",
+    style: {
+      'background-image': "url(" + _vm.imagens[_vm.currentImage] + ")",
+      'background-size': _vm.backgroundCover ? 'cover' : '100% 100%',
+      'background-repeat': 'no-repeat',
+      width: _vm.width,
+      height: _vm.height
+    }
+  }, [_vm._t("header"), _vm._v(" "), _c('section', {
+    staticClass: "controles"
+  }, [_c('span', {
+    staticClass: "left",
+    on: {
+      "click": function ($event) {
+        $event.preventDefault();
+        _vm.previousDisabled ? '' : _vm.previous();
+      }
+    }
+  }, [_c('svg', {
+    attrs: {
+      "width": "20",
+      "height": "30",
+      "viewBox": "0 0 248 400",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M247.667 353L95.0001 200L247.667 47L200.667 0L0.666748 200L200.667 400L247.667 353Z",
+      "fill": _vm.previousDisabled ? '#ccc' : '#fff'
+    }
+  })])]), _vm._v(" "), _c('span', {
+    staticClass: "right",
+    on: {
+      "click": function ($event) {
+        $event.preventDefault();
+        _vm.nextDisabled ? '' : _vm.next();
+      }
+    }
+  }, [_c('svg', {
+    attrs: {
+      "width": "20",
+      "height": "30",
+      "viewBox": "0 0 247 400",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M1.56015e-05 47L152.667 200L-1.11499e-05 353L47 400L247 200L47 -1.74846e-05L1.56015e-05 47Z",
+      "fill": _vm.nextDisabled ? '#ccc' : '#fff'
+    }
+  })])])])], 2);
+};
+
+var __vue_staticRenderFns__$4 = [];
+/* style */
+
+const __vue_inject_styles__$4 = function (inject) {
+  if (!inject) return;
+  inject("data-v-4dde83f8_0", {
+    source: ".galeria[data-v-4dde83f8]{display:flex;flex-direction:column;padding:0 10px}.galeria .controles[data-v-4dde83f8]{height:100%;display:flex;align-items:center}.galeria .controles span[data-v-4dde83f8]{cursor:pointer;transition:transform .15s ease-in-out;position:absolute}.galeria .controles span.right[data-v-4dde83f8]{right:26px}.galeria .controles span.right[data-v-4dde83f8]:hover{-moz-transform:translate(3px,0);-webkit-transform:translate(3px,0);-o-transform:translate(3px,0);-ms-transform:translate(3px,0);transform:translate(3px,0)}.galeria .controles span.left[data-v-4dde83f8]:hover{-moz-transform:translate(-3px,0);-webkit-transform:translate(-3px,0);-o-transform:translate(-3px,0);-ms-transform:translate(-3px,0);transform:translate(-3px,0)}",
+    map: undefined,
+    media: undefined
+  });
+};
+/* scoped */
+
+
+const __vue_scope_id__$4 = "data-v-4dde83f8";
+/* module identifier */
+
+const __vue_module_identifier__$4 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$4 = false;
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$4 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$4,
+  staticRenderFns: __vue_staticRenderFns__$4
+}, __vue_inject_styles__$4, __vue_script__$4, __vue_scope_id__$4, __vue_is_functional_template__$4, __vue_module_identifier__$4, false, createInjector, undefined, undefined);
+
 var components = /*#__PURE__*/Object.freeze({
   __proto__: null,
   Logo: __vue_component__,
   PreloaderVerticalizacao: __vue_component__$1,
   Combobox: __vue_component__$2,
-  Card: __vue_component__$3
+  Card: __vue_component__$3,
+  Galeria: __vue_component__$4
 });
 
 // Import vue components
@@ -706,4 +896,4 @@ const plugin = {
 }; // To auto-install on non-es builds, when vue is found
 
 export default plugin;
-export { __vue_component__$3 as Card, __vue_component__$2 as Combobox, __vue_component__ as Logo, __vue_component__$1 as PreloaderVerticalizacao };
+export { __vue_component__$3 as Card, __vue_component__$2 as Combobox, __vue_component__$4 as Galeria, __vue_component__ as Logo, __vue_component__$1 as PreloaderVerticalizacao };
