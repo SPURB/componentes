@@ -672,7 +672,77 @@ var __vue_is_functional_template__$4 = false;
 var __vue_component__$4 = /*#__PURE__*/normalizeComponent({
   render: __vue_render__$4,
   staticRenderFns: __vue_staticRenderFns__$4
-}, __vue_inject_styles__$4, __vue_script__$4, __vue_scope_id__$4, __vue_is_functional_template__$4, __vue_module_identifier__$4, false, undefined, createInjectorSSR, undefined);var components=/*#__PURE__*/Object.freeze({__proto__:null,Logo: __vue_component__,PreloaderVerticalizacao: __vue_component__$1,Combobox: __vue_component__$2,Card: __vue_component__$3,Galeria: __vue_component__$4});var install = function installComponentes(Vue) {
+}, __vue_inject_styles__$4, __vue_script__$4, __vue_scope_id__$4, __vue_is_functional_template__$4, __vue_module_identifier__$4, false, undefined, createInjectorSSR, undefined);//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$5 = {
+  name: 'Button',
+  props: {
+    actionText: {
+      type: String,
+      required: true
+    },
+    styleButton: {
+      type: String,
+      required: true,
+      default: 'bg-blue-500 hover:bg-blue-700'
+    }
+  },
+  methods: {
+    actionButton: function actionButton() {
+      this.$emit('buttonClick');
+    }
+  }
+};/* script */
+var __vue_script__$5 = script$5;
+/* template */
+
+var __vue_render__$5 = function __vue_render__() {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('button', {
+    staticClass: "text-white font-bold py-2 px-4 rounded",
+    class: _vm.style,
+    on: {
+      "click": _vm.actionButton
+    }
+  }, [_vm._ssrNode(_vm._ssrEscape("\n  " + _vm._s(_vm.actionText) + "\n"))]);
+};
+
+var __vue_staticRenderFns__$5 = [];
+/* style */
+
+var __vue_inject_styles__$5 = undefined;
+/* scoped */
+
+var __vue_scope_id__$5 = undefined;
+/* module identifier */
+
+var __vue_module_identifier__$5 = "data-v-280d529b";
+/* functional template */
+
+var __vue_is_functional_template__$5 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+var __vue_component__$5 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$5,
+  staticRenderFns: __vue_staticRenderFns__$5
+}, __vue_inject_styles__$5, __vue_script__$5, __vue_scope_id__$5, __vue_is_functional_template__$5, __vue_module_identifier__$5, false, undefined, undefined, undefined);var components=/*#__PURE__*/Object.freeze({__proto__:null,Logo: __vue_component__,PreloaderVerticalizacao: __vue_component__$1,Combobox: __vue_component__$2,Card: __vue_component__$3,Galeria: __vue_component__$4,Button: __vue_component__$5});var install = function installComponentes(Vue) {
   if (install.installed) return;
   install.installed = true;
   Object.entries(components).forEach(function (_ref) {
@@ -705,4 +775,4 @@ var plugin = {
     GlobalVue.use(plugin);
   }
 } // Default export is library as a whole, registered via Vue.use()
-exports.Card=__vue_component__$3;exports.Combobox=__vue_component__$2;exports.Galeria=__vue_component__$4;exports.Logo=__vue_component__;exports.PreloaderVerticalizacao=__vue_component__$1;exports.default=plugin;
+exports.Button=__vue_component__$5;exports.Card=__vue_component__$3;exports.Combobox=__vue_component__$2;exports.Galeria=__vue_component__$4;exports.Logo=__vue_component__;exports.PreloaderVerticalizacao=__vue_component__$1;exports.default=plugin;

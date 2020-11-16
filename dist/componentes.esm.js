@@ -871,13 +871,89 @@ const __vue_component__$4 = /*#__PURE__*/normalizeComponent({
   staticRenderFns: __vue_staticRenderFns__$4
 }, __vue_inject_styles__$4, __vue_script__$4, __vue_scope_id__$4, __vue_is_functional_template__$4, __vue_module_identifier__$4, false, createInjector, undefined, undefined);
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$5 = {
+  name: 'Button',
+  props: {
+    actionText: {
+      type: String,
+      required: true
+    },
+    styleButton: {
+      type: String,
+      required: true,
+      default: 'bg-blue-500 hover:bg-blue-700'
+    }
+  },
+  methods: {
+    actionButton() {
+      this.$emit('buttonClick');
+    }
+
+  }
+};
+
+/* script */
+const __vue_script__$5 = script$5;
+/* template */
+
+var __vue_render__$5 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('button', {
+    staticClass: "text-white font-bold py-2 px-4 rounded",
+    class: _vm.style,
+    on: {
+      "click": _vm.actionButton
+    }
+  }, [_vm._v("\n  " + _vm._s(_vm.actionText) + "\n")]);
+};
+
+var __vue_staticRenderFns__$5 = [];
+/* style */
+
+const __vue_inject_styles__$5 = undefined;
+/* scoped */
+
+const __vue_scope_id__$5 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$5 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$5 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$5 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$5,
+  staticRenderFns: __vue_staticRenderFns__$5
+}, __vue_inject_styles__$5, __vue_script__$5, __vue_scope_id__$5, __vue_is_functional_template__$5, __vue_module_identifier__$5, false, undefined, undefined, undefined);
+
 var components = /*#__PURE__*/Object.freeze({
   __proto__: null,
   Logo: __vue_component__,
   PreloaderVerticalizacao: __vue_component__$1,
   Combobox: __vue_component__$2,
   Card: __vue_component__$3,
-  Galeria: __vue_component__$4
+  Galeria: __vue_component__$4,
+  Button: __vue_component__$5
 });
 
 // Import vue components
@@ -896,4 +972,4 @@ const plugin = {
 }; // To auto-install on non-es builds, when vue is found
 
 export default plugin;
-export { __vue_component__$3 as Card, __vue_component__$2 as Combobox, __vue_component__$4 as Galeria, __vue_component__ as Logo, __vue_component__$1 as PreloaderVerticalizacao };
+export { __vue_component__$5 as Button, __vue_component__$3 as Card, __vue_component__$2 as Combobox, __vue_component__$4 as Galeria, __vue_component__ as Logo, __vue_component__$1 as PreloaderVerticalizacao };
