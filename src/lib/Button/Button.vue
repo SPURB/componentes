@@ -1,6 +1,6 @@
 <template>
   <button 
-    :class="style"
+    :class="styleButton"
     class="text-white font-bold py-2 px-4 rounded"
     @click="actionButton"
   >
@@ -18,7 +18,6 @@ export default {
     },
     styleButton: {
       type: String,
-      required: true,
       default: 'bg-blue-500 hover:bg-blue-700'
     }
   },
