@@ -26,6 +26,6 @@ Exemplo de uso no template
 
 ### Event
 | nome | descrição |
-|:-|:-|:-|
+|:-|:-|
 | `@buttonClick` | Envia um action quando o botão for clicado |
 
