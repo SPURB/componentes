@@ -3,7 +3,7 @@
 exports[`Galeria.vue Renderiza corretamente passando props 1`] = `
 <div
   class="galeria"
-  style="background-image: url(https://www.dalcomad.com.br/wp-content/uploads/2018/11/capa.jpg); background-size: 100% 100%; background-repeat: no-repeat;"
+  style="background-image: url(https://www.dalcomad.com.br/wp-content/uploads/2018/11/capa.jpg); background-size: 100% 100%; background-repeat: no-repeat; width: 100%; height: 300px;"
 >
    
   <section

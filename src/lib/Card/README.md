@@ -1,8 +1,8 @@
-# Combobox.vue
-Componente de dropdown para seleção de items
+# Card.vue
+Componente de card
 
 ## Exemplo
-https://spurb.github.io/componentes/?path=/story/combobox--normal
+https://spurb.github.io/componentes/?path=/story/card--card
 
 ## Instruções de uso
 Declare
