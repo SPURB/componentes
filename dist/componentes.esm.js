@@ -890,7 +890,6 @@ var script$5 = {
     },
     styleButton: {
       type: String,
-      required: true,
       default: 'bg-blue-500 hover:bg-blue-700'
     }
   },
@@ -915,7 +914,7 @@ var __vue_render__$5 = function () {
 
   return _c('button', {
     staticClass: "text-white font-bold py-2 px-4 rounded",
-    class: _vm.style,
+    class: _vm.styleButton,
     on: {
       "click": _vm.actionButton
     }

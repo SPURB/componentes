@@ -691,7 +691,6 @@ var script$5 = {
     },
     styleButton: {
       type: String,
-      required: true,
       default: 'bg-blue-500 hover:bg-blue-700'
     }
   },
@@ -713,7 +712,7 @@ var __vue_render__$5 = function __vue_render__() {
 
   return _c('button', {
     staticClass: "text-white font-bold py-2 px-4 rounded",
-    class: _vm.style,
+    class: _vm.styleButton,
     on: {
       "click": _vm.actionButton
     }
@@ -729,7 +728,7 @@ var __vue_inject_styles__$5 = undefined;
 var __vue_scope_id__$5 = undefined;
 /* module identifier */
 
-var __vue_module_identifier__$5 = "data-v-280d529b";
+var __vue_module_identifier__$5 = "data-v-dc3ac282";
 /* functional template */
 
 var __vue_is_functional_template__$5 = false;
