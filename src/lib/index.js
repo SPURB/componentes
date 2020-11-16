@@ -3,3 +3,4 @@ export { default as PreloaderVerticalizacao } from './PreloaderVerticalizacao/Pr
 export { default as Combobox } from './Combobox/Combobox.vue'
 export { default as Card } from './Card/Card.vue'
 export { default as Galeria } from './Galeria/Galeria.vue'
+export { default as Button } from './Button/Button.vue'

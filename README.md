@@ -33,11 +33,12 @@ https://spurb.github.io/componentes/
 
 
 ## Instalação e intruções de uso
- - [Logo](./src/lib/logo/README)
- - [Preloader de verticalização](./src/lib/PreloaderVerticalizacao/README)
- - [Combobox](./src/lib/Combobox/README)
- - [Card](./src/lib/Card/README)
- - [Galeria](./src/lib/Galeria/README)
+ - [Logo](./src/lib/logo/README.md)
+ - [Preloader de verticalização](./src/lib/PreloaderVerticalizacao/README.md)
+ - [Combobox](./src/lib/Combobox/README.md)
+ - [Card](./src/lib/Card/README.md)
+ - [Galeria](./src/lib/Galeria/README.md)
+ - [Button](./src/lib/Button/README.md)
 
 
 ## Desenvolvimento

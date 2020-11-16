@@ -1,15 +1,15 @@
-# Combobox.vue
-Componente de dropdown para seleção de items
+# Galeria.vue
+Componente de galeria de imagens
 
 ## Exemplo
-https://spurb.github.io/componentes/?path=/story/combobox--normal
+https://spurb.github.io/componentes/?path=/story/galeria--background-size-100-100
 
 ## Instruções de uso
 Declare
 ```js
-import { Combobox } from '@spurb/componentes'
+import { Galeria } from '@spurb/componentes'
 export default {
-  components: { Combobox }
+  components: { Galeria }
 }
 ```
 

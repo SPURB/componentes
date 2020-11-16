@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue'
 import Galeria from './Galeria.vue'
 
 storiesOf('Galeria', module)
-  .add('background-size: 100% 100%',  () => ({
+  .add('background-size: 100% 100%', () => ({
     components: { Galeria },
     template: `
       <Galeria
@@ -15,7 +15,7 @@ storiesOf('Galeria', module)
     data () {
       return {
         imagens: [
-          'https://www.dalcomad.com.br/wp-content/uploads/2018/11/capa.jpg', 
+          'https://www.dalcomad.com.br/wp-content/uploads/2018/11/capa.jpg',
           'https://www.estudarfora.org.br/app/uploads/2019/04/urbanismo.jpg'
         ]
       }
@@ -34,7 +34,7 @@ storiesOf('Galeria', module)
     data () {
       return {
         imagens: [
-          'https://www.dalcomad.com.br/wp-content/uploads/2018/11/capa.jpg', 
+          'https://www.dalcomad.com.br/wp-content/uploads/2018/11/capa.jpg',
           'https://www.estudarfora.org.br/app/uploads/2019/04/urbanismo.jpg'
         ]
       }
